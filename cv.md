@@ -23,4 +23,5 @@
 ## **CONTACT**    
 
 * _Telegram_ : @illia_kuz
-* _Discord_ : Illia ( IllOll )#6908
+* _Discord_ : Illia ( IllOll )#6908 
+* _telephone_ :
