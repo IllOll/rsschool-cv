@@ -1,3 +1,516 @@
-.main{
-  font-size: 16px;
+
+
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    height: 1550px;
+    width: 100%; 
+    background: rgb(3,56,244);
+    background: linear-gradient(180deg, rgba(3,56,244,1) 0%, rgba(224,37,206,1) 100%);
+    
+}
+.wrapper-main{
+    display: flex;
+    justify-content: space-around;
+    
+
+
+
+}
+
+.about-me{
+    height: 1500px;
+    width: auto;
+    margin: 10px;
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 20px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+
+
+.profile{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+}
+.photo{
+    height: 250px;
+    width: 250px;
+    background-image: url(./src/photo_2022-10-15_19-55-25.jpg);
+    background-size: cover;
+    border-radius: 50%;
+
+}
+
+.name{
+    font-size: 55px;
+    font-weight: 500;
+    color: aliceblue;
+    width:300px ;
+}
+
+.first-name{
+    font-size: 40px;
+    margin: 10px;
+    color:rgb(221, 185, 220) ;
+
+}
+
+.second-name{
+    margin: 10px;
+
+}
+
+.profession{
+font-size: 30px;
+margin: 10px;
+color: rgb(221, 185, 220);
+}
+
+.mail{
+    margin: 5px 10px 5px 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    border-radius: 15px;
+    align-items: center;
+    background-color: rgba(186, 175, 175, 0.233);
+
+}
+
+.mail-icon{ 
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-image: url(./src/mdi_mail.png)
+
+}
+
+.mail-text{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.phone{
+    margin: 5px 10px 5px 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    border-radius: 15px;
+    align-items: center;
+    background-color: rgba(186, 175, 175, 0.233);
+    
+
+}
+
+.phone-icon{
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-image: url(./src/mdi_call.png);
+
+}
+
+.phone-number{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+
+}
+
+.web-site{
+    margin: 5px 10px 5px 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    border-radius: 15px;
+    align-items: center;
+    background-color: rgba(186, 175, 175, 0.233);
+
+}
+
+.web-icon{
+    background-image: url(./src/website.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
+
+.web-text{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+
+}
+
+.city{
+    margin: 5px 10px 5px 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    border-radius: 15px;
+    align-items: center;
+    background-color: rgba(186, 175, 175, 0.233);
+
+}
+
+.city-icon{
+    background-image: url(./src/mdi_location_on.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+
+}
+
+.city-text{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+
+}
+
+.knowledge{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: rgba(186, 175, 175, 0.233);
+
+
+}
+
+.know-list{
+    margin: 20px 20px 20px 40px;
+
+
+}
+
+.know-item{
+    list-style-type: disc;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.languages{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: rgba(186, 175, 175, 0.233);
+
+
+}
+
+.languages-list{
+    margin: 20px 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
+
+}
+
+.languages-item{
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    
+    
+
+}
+
+.lang{
+    margin-right: 10px;
+    width: 100px;
+}
+
+.dot{
+    height: 12px;
+    width: 12px;
+    background-color: rgb(221, 185, 220);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+}
+
+.dot-black{
+    height: 12px;
+    width: 12px;
+    background-color: rgb(94, 74, 105);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+
+}
+
+.social{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: rgba(186, 175, 175, 0.233);
+
+}
+
+.social-list{
+    margin: 20px 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.link{
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+
+}
+
+.paragraph-hobbies{
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: rgba(186, 175, 175, 0.233);
+
+    
+}
+.hobbies{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.hobbies-staff-bike{
+    background-image: url(./src/bike.png);
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    border: 5px solid rgb(94, 74, 105);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center top -10px ;
+    background-size: 105px;
+}
+
+.hobbies-staff-book{
+    background-color: white;
+    background-image: url(./src/book.png);
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    border: 5px solid rgb(94, 74, 105);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: 105px;
+}
+
+
+.hobbies-staff-gym{
+    background-color: white;
+    background-image: url(./src/gym.png);
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    border: 5px solid rgb(94, 74, 105);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px;
+}
+
+
+.hobbies-staff-joystick{
+    background-color: white;
+    background-image: url(./src/joystick.png);
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    border: 5px solid rgb(94, 74, 105);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110px;
+}
+
+
+
+.my-skills{
+    height: 1500px;
+    width: 700px;
+    margin: 10px;
+    background: rgb(236, 233, 236);
+    border-radius: 20px;
+}
+
+
+.experience{
+    margin: 20px 10px 20px 10px;
+    height: 40px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 15px ;
+    background-color:rgb(94, 74, 105) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px ;
+    color: aliceblue;
+
+
+}
+.experience-text{
+    margin: 10px;
+}
+.header{
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(94, 74, 105) ;
+    margin: 10px;
+    font-style: italic;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-skills-html{
+    background-image: url(./src/html.png);
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    border: 5px solid rgb(94, 74, 105);
+    border-radius: 50%;
+}
+
+.icon-skills-css{
+    background-image: url(./src/css.png);
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    border: 5px solid rgb(94, 74, 105);
+    border-radius: 50%;
+
+}
+
+.icon-skills-js{
+    background-image: url(./src/js.png);
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    border: 5px solid rgb(94, 74, 105);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center
+    ;
+
+}
+
+.icon-skills-github{
+    background-image: url(./src/github.png);
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    border: 5px solid rgb(94, 74, 105);
+    border-radius: 50%;
+
+}
+
+.icon-skills-react{
+    background-image: url(./src/react.png);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border: 5px solid rgb(94, 74, 105);
+    border-radius: 50%;
+    background-position: center;
+}
+
+.icon-skills-figma{
+    background-image: url(./src/figma.png);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-size: 88px;
+    background-position: center;
+    border: 5px solid rgb(94, 74, 105);
+    border-radius: 50%;
 }
