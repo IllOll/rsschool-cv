@@ -30,7 +30,7 @@ Lately I've been into programming. I like to learn something new and look for so
       return (String(n).length)
     }
     
-    ## Education:
+## Education:
 
 Bachelor of Electro-mechanic
 
