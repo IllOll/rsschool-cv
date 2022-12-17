@@ -28,7 +28,7 @@ Lately I've been into programming. I like to learn something new and look for so
     function digits(n) 
       
       return (String(n).length)
-    }
+    
     
 ## Education:
 
